@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>DOM</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     
 </head>
+
 <body>
     <h5 id="titulo">Soy el main!</h5>
 
 
 
 
-    
+    <!--  El atributo defer indica al navegador que no espere por el script. En lugar de ello, 
+        debe seguir procesando el HTML, construir el DOM. El script carga “en segundo plano” y
+        se ejecuta cuando el DOM esta completo.
+    Los scripts con defer siempre se ejecutan cuando el DOM esta listo (pero antes del evento 
+        DOMContentLoaded).
+    defer no funciona igual en todos los navegadores. -->
     <script src='app.js'></script>
 </body>
+
 </html>
